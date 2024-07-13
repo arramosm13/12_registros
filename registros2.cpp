@@ -27,5 +27,12 @@ int main() {
     promedio_edades = suma_edades / n;
     cout << "Hay "<< mayores50 <<" personas mayores a 50 años. \n" << endl;
     cout << "El promedio de todas las edades de las personas es: " << promedio_edades << endl;
-return 0;
+    
+    cout << "\nLos datos de las personas ingresadas son: \n";
+    for (int i = 0; i < n; i++) {
+        cout << "Nombre: " << persona[i].nombre << endl;
+        cout << "DNI: " << persona[i].DNI << endl;
+        cout << "Edad: " << persona[i].edad << endl;
+        cout << "--------------------------------\n";
+    }return 0;
 }
