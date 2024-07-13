@@ -1,5 +1,5 @@
 #include<iostream>
-#include<cstring.>
+#include<cstring>
 using namespace std;
 struct datos_empleado{
 	char nombre[30];
