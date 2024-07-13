@@ -11,7 +11,7 @@ struct datos_persona {
 
 int main() {
     datos_persona persona[40];
-    int n;
+    int n, mes_buscar;
     cout << "Ingrese el numero de personas que desea saber sus datos: "; cin >> n;
 	for (int i = 0; i < n; i++) {
         cout << "Ingrese el nombre de la persona: "; cin >> persona[i].nombre;
@@ -20,6 +20,11 @@ int main() {
         cout << "Ingrese el año de nacimiento: "; cin >> persona[i].tiempo;
         cout << "--------------------------------\n";
     }
+    
+    do {
+        cout << "Ingrese un numero de mes (la opcion 0 es para salir): "; cin >> mes_buscar;
+
+    } while (mes_buscar != 0);
     return 0;
 }
 
